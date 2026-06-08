@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", "Inter", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --font-heading: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  
+  --color-tradixo-gold: #C5A25D;
+  --color-tradixo-gold-dark: #AA8B4C;
+  --color-tradixo-gold-light: #FDFBF7;
+  --color-tradixo-accent-gold: #D4AF37;
+  --color-tradixo-text-grey: #1E293B;
+  
+  --shadow-gold-sm: 0 1px 2px 0 rgba(197, 162, 93, 0.05);
+  --shadow-gold-md: 0 4px 6px -1px rgba(197, 162, 93, 0.1), 0 2px 4px -2px rgba(197, 162, 93, 0.05);
+  --shadow-gold-lg: 0 10px 15px -3px rgba(197, 162, 93, 0.1), 0 4px 6px -4px rgba(197, 162, 93, 0.05);
+  --shadow-gold-xl: 0 20px 25px -5px rgba(197, 162, 93, 0.12), 0 8px 10px -6px rgba(197, 162, 93, 0.08);
+}
+
+/* Custom global styles for smooth scrolls and standard inputs */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  color: var(--color-tradixo-text-grey);
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.shadow-custom-gold {
+  box-shadow: var(--shadow-gold-md);
+}
+
+.shadow-custom-gold-lg {
+  box-shadow: var(--shadow-gold-lg);
+}
+
+.shadow-custom-gold-xl {
+  box-shadow: var(--shadow-gold-xl);
+}
+
+/* Geometric Balance Theme Classes */
+.gold-shadow {
+  box-shadow: 0 10px 30px -10px rgba(197, 162, 93, 0.15);
+}
+
+.geometric-accent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: var(--color-tradixo-gold);
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 0;
+  opacity: 0.025;
+}
+
+.geometric-accent-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  background: var(--color-tradixo-accent-gold);
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+  z-index: 0;
+  opacity: 0.035;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Print Styles: isolates and prints only the receipt card */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-receipt, #printable-receipt * {
+    visibility: visible;
+  }
+  #printable-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: white;
+    color: black;
+  }
+}
+

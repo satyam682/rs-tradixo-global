@@ -1,0 +1,6 @@
+{
+  "name": "Rs Tradixo Global",
+  "description": "Trusted exporter of premium quality agricultural products from India worldwide, specializing in peanuts, rice, and agricultural commodities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

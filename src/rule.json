@@ -1,0 +1,152 @@
+{
+  "botName": "TradixoBot",
+  "greeting": "👋 Hello! I'm **TradixoBot**, your Rs Tradixo Global export assistant.\n\nI can help you with:\n• 🥜 Product details & specifications\n• 🌾 Rice & peanut quality info\n• 📦 Packing & MOQ details\n• 🚢 Shipping & transit info\n• 📋 Certifications & compliance\n• 💰 Payment & pricing terms\n• 🌍 Export markets we serve\n\nHow can I assist you today?",
+  "fallback": "I'm sorry, I didn't quite understand that. Could you rephrase your question? You can ask me about our **products**, **packing**, **shipping**, **certifications**, **payment terms**, or **export markets**.\n\nOr type **help** to see all topics I can assist with.",
+  "rules": [
+    {
+      "id": "help",
+      "keywords": ["help", "menu", "topics", "options", "assist", "what can you do", "capabilities"],
+      "response": "📋 **Here's what I can help you with:**\n\n🥜 **Products** — Peanuts, Basmati Rice, Non-Basmati Rice\n📐 **Specifications** — Grade, size, moisture, aflatoxin levels\n📦 **Packing** — Bag types, container options, MOQ\n🚢 **Shipping** — Transit times, ports, Incoterms (FOB, CIF, CFR)\n📋 **Certifications** — IEC, FSSAI, Phytosanitary, SGS\n💰 **Payment** — L/C, T/T, payment terms\n🌍 **Markets** — UAE, Vietnam, Indonesia, Saudi Arabia, Malaysia\n🔬 **Quality** — Aflatoxin control, moisture guard, SGS inspection\n📞 **Contact** — Email, phone, WhatsApp, address\n\nJust type your question naturally!"
+    },
+    {
+      "id": "greeting",
+      "keywords": ["hi", "hello", "hey", "good morning", "good afternoon", "good evening", "namaste", "salaam", "greetings"],
+      "response": "👋 Hello! Welcome to **Rs Tradixo Global** — India's trusted agricultural exporter from Gujarat.\n\nWe specialize in:\n• 🥜 **Peanut Kernels** (Java & Bold varieties)\n• 🌾 **Basmati Rice** (Extra-long grain, aged)\n• 🍚 **Non-Basmati Rice** (IR64, Swarna, PR11)\n\nHow can I help you today? Feel free to ask about products, pricing, shipping, or certifications!"
+    },
+    {
+      "id": "about_company",
+      "keywords": ["about", "company", "who are you", "tradixo", "rs tradixo", "gujarat", "india exporter", "background", "story", "founded", "established"],
+      "response": "🏢 **About Rs Tradixo Global**\n\nWe are a **premium agricultural commodities exporter** based in Gujarat, India.\n\n📍 **Location:** Adipur-Gandhidham, Kutch, Gujarat — strategically near **Mundra Port**, India's largest private container port\n\n🎯 **Core Mission:** Bridge Gujarat's farming communities with bulk international buyers across the Middle East, South-East Asia, and beyond\n\n✅ **Key Strengths:**\n• Direct farmer partnerships (Kutch, Saurashtra, North Gujarat)\n• State-of-the-art mechanical sorting & color grading\n• Independent SGS / Geo-Chem quality inspection on every shipment\n• 15,000+ MT exported | 11+ global sourcing lanes | 0% port delay\n\n📞 Contact: +91 98794 98123 | info@rstradixoglobal.com"
+    },
+    {
+      "id": "all_products",
+      "keywords": ["products", "what do you sell", "commodities", "export range", "offerings", "product list", "all products"],
+      "response": "📦 **Our Export Products:**\n\n🥜 **Peanut Kernels (Groundnuts)**\n• Java Peanut Kernels — smaller, oval, high oil content (50/60, 60/70, 70/80, 80/90 counts/oz)\n• Bold Peanut Kernels — large elongated, premium grade (38/42, 40/50, 50/60 counts/oz)\n\n🌾 **Basmati Rice**\n• Extra-long grain (8.30–8.40mm), naturally aromatic, aged to perfection\n• Purity: 95%+ | Broken: 0.5–1.0% max | Moisture: 12% max\n\n🍚 **Non-Basmati Rice**\n• Varieties: IR64, Swarna, PR11 | Raw, Parboiled, or Silky Polished\n• Broken options: 5%, 15%, or 25%\n\nWould you like detailed specs on any specific product? Just ask!"
+    },
+    {
+      "id": "java_peanuts",
+      "keywords": ["java peanut", "java kernel", "java groundnut", "small peanut", "round peanut", "oval peanut", "peanut butter peanut", "red skin peanut"],
+      "response": "🥜 **Java Peanut Kernels — Detailed Specs**\n\n**Type:** Java Kidneys / Round Kernels (Red-skin)\n**Tagline:** Premium Grade, High Oil Content\n\n📐 **Specifications:**\n| Parameter | Value |\n|-----------|-------|\n| Size (Counts/Oz) | 50/60, 60/70, 70/80, 80/90, 140/160 |\n| Moisture | 7.0%–8.0% Max |\n| Aflatoxin | 4 PPB Max (EU standard) |\n| Admixture | 1.0% Max |\n| Splits/Damaged | 1.0%–1.5% Max |\n| Crop Year | Current Season |\n\n✅ **Best For:** Peanut butter manufacturing, oil extraction, salted confectionery snacks\n\n📦 **Packing Options:**\n• 25 kg Brand-New Jute Bags\n• 50 kg Eco-Friendly PP Bags\n• One-way Vacuum Pack (custom)\n\n💡 High oil content makes them cost-effective for oil refiners. EU aflatoxin compliant!"
+    },
+    {
+      "id": "bold_peanuts",
+      "keywords": ["bold peanut", "bold kernel", "large peanut", "big peanut", "elongated peanut", "premium peanut", "snack peanut", "roasting peanut", "chocolate peanut"],
+      "response": "🥜 **Bold Peanut Kernels — Detailed Specs**\n\n**Type:** Bold Elongated Premium Kernels (Light-tan skin)\n**Tagline:** Premium Quality Large-Size Shelled Groundnuts\n\n📐 **Specifications:**\n| Parameter | Value |\n|-----------|-------|\n| Size (Counts/Oz) | 38/42, 40/50, 50/60, 60/70 |\n| Moisture | 7.0%–8.0% Max |\n| Aflatoxin | 4 PPB (Premium) / 10 PPB (Standard) |\n| Admixture | 0.5%–1.0% Max |\n| Splits/Damaged | 1.0% Max |\n| Foreign Matter | Strictly Negative |\n\n✅ **Best For:** Premium snack packaging, roasting, chocolate confectionery\n\n📦 **Packing Options:**\n• 25 kg New Jute Bags\n• 50 kg PP Woven Bags\n• 1000 kg Bulk Jumbo Container Bags\n\n💡 Strong kernel integrity ensures low split rate during bulk sea-freight transport!"
+    },
+    {
+      "id": "basmati_rice",
+      "keywords": ["basmati", "basmati rice", "aromatic rice", "long grain rice", "premium rice", "aged rice", "fragrant rice", "luxury rice", "fine dining rice"],
+      "response": "🌾 **Premium Basmati Rice — Detailed Specs**\n\n**Tagline:** Extra-Long Grain, Majestic Aroma, Fragrant Luxury\n\n📐 **Specifications:**\n| Parameter | Value |\n|-----------|-------|\n| Average Grain Length | 8.30–8.40 mm (raw basis) |\n| Purity Level | 95.0% Minimum |\n| Moisture Content | 12.0% Maximum |\n| Broken Grains | 0.5%–1.0% Max |\n| Damage/Discolored | Nil |\n| Chalky Grains | 2.0% Max |\n| Aroma | Naturally High / Aged Basmati Standard |\n\n✅ **Best For:** Gourmet restaurants, retail premium packaging, Middle East export\n\n📦 **Packing Options:**\n• 5 kg, 10 kg, 20 kg Premium BOPP Bags\n• 25 kg, 50 kg Heavy-Duty PP Master Bags\n• Custom buyer logo printed retail packaging\n\n💡 Aged to perfection — grains expand up to 2.5x length upon cooking!"
+    },
+    {
+      "id": "non_basmati_rice",
+      "keywords": ["non basmati", "non-basmati", "ir64", "swarna", "pr11", "parboiled rice", "sella rice", "bulk rice", "cheap rice", "regular rice", "cost effective rice"],
+      "response": "🍚 **Non-Basmati Rice — Detailed Specs**\n\n**Varieties:** IR64, Swarna, PR11\n**Available Types:** Raw | Parboiled (Sella) | Silky Polished\n\n📐 **Specifications:**\n| Parameter | Value |\n|-----------|-------|\n| Grain Length | 6.0–6.8 mm |\n| Broken Ratio | 5%, 15%, or 25% Broken options |\n| Moisture | 13.0%–14.0% Max |\n| Foreign Matter | 0.5% Max |\n| Chalky Kernels | 5.0% Max |\n| Damage/Yellow Grains | 1.5% Max |\n\n✅ **Best For:** Industrial catering, national food networks, bulk retail, government orders\n\n📦 **Packing Options:**\n• 50 kg double-layer woven PP bags with inner lining\n• 25 kg HDPE bags\n• Bulk loose vessel cargo loading (government-to-government)\n\n💡 Parboiled format preserves core vitamins in the husk — highly nutritious!"
+    },
+    {
+      "id": "peanuts_general",
+      "keywords": ["peanut", "groundnut", "mungfali", "moongphali", "peanut kernel", "groundnut kernel"],
+      "response": "🥜 **Our Peanut / Groundnut Export Range:**\n\nWe export two premium grades of peanut kernels:\n\n**1️⃣ Java Peanut Kernels**\n• Size: 50/60 to 140/160 counts/oz\n• High oil content, sweet flavor\n• Best for: Peanut butter, oil extraction, confectionery\n• Aflatoxin: 4 PPB Max (EU compliant)\n\n**2️⃣ Bold Peanut Kernels**\n• Size: 38/42 to 60/70 counts/oz\n• Large, elongated, premium grade\n• Best for: Roasting, snacks, chocolate manufacturing\n• Aflatoxin: 4–10 PPB (premium/standard grades)\n\n📦 Both available in 25 kg, 50 kg bags | MOQ: 1 FCL (≈19–20 MT per 20ft container)\n\nWould you like specs on **Java** or **Bold** peanuts specifically?"
+    },
+    {
+      "id": "rice_general",
+      "keywords": ["rice", "chawal", "grain", "chaawal"],
+      "response": "🌾 **Our Rice Export Range:**\n\nWe export two premium categories of rice:\n\n**1️⃣ Premium Basmati Rice**\n• Extra-long grain (8.30–8.40mm)\n• Naturally aromatic, aged to perfection\n• Purity: 95%+ | Moisture: 12% max\n• Best for: UAE, Saudi Arabia, gourmet/retail markets\n\n**2️⃣ Non-Basmati Rice** (IR64, Swarna, PR11)\n• Grain length: 6.0–6.8mm\n• Available Raw, Parboiled (Sella), Silky Polished\n• Broken: 5%, 15%, or 25% options\n• Best for: Vietnam, Indonesia, Philippines, bulk food networks\n\n📦 MOQ: 1 FCL (≈24–25 MT per 20ft container for rice)\n\nWant detailed specs on **Basmati** or **Non-Basmati** rice?"
+    },
+    {
+      "id": "moq",
+      "keywords": ["moq", "minimum order", "minimum quantity", "how much minimum", "smallest order", "trial order", "sample order", "least quantity"],
+      "response": "📦 **Minimum Order Quantity (MOQ)**\n\nOur standard export MOQ is **1 Full Container Load (FCL)**:\n\n🥜 **Peanuts (20ft container):**\n• ≈ 19–20 Metric Tons\n• Depending on packing configuration (25 kg or 50 kg bags)\n\n🌾 **Rice (20ft container):**\n• ≈ 24–25 Metric Tons\n• Depending on bag size and stacking configuration\n\n📦 **40ft container:** Approximately double the above quantities\n\n🧪 **Trial / Sample Orders:**\nFor first-time buyers interested in quality verification, please contact our sales team in Mundra directly — we can discuss LCL (Less than Container Load) trial arrangements.\n\n📞 Contact: +91 98794 98123 | info@rstradixoglobal.com\n💬 WhatsApp: +91 98794 98123"
+    },
+    {
+      "id": "packing",
+      "keywords": ["packing", "packaging", "bags", "jute bag", "pp bag", "vacuum pack", "custom label", "private label", "custom brand", "logo print", "bag size", "container"],
+      "response": "📦 **Packing & Packaging Options**\n\n🥜 **Peanuts:**\n• 25 kg Brand-New Jute Bags\n• 50 kg Eco-Friendly PP Woven Bags\n• 1000 kg Bulk Jumbo FIBC Bags\n• One-way Vacuum Pack (on request)\n\n🌾 **Rice:**\n• 5 kg / 10 kg / 20 kg Premium BOPP Bags\n• 25 kg / 50 kg Heavy-Duty PP Master Bags\n• 50 kg double-layer woven PP with inner lining\n• Bulk loose vessel cargo loading\n\n🎨 **Custom / Private Label Packaging:**\n✅ Yes! We support custom brand printing:\n• Your company logo & brand name\n• Localized language text\n• Trade weight barcodes\n• Import license information\n• Sizes from **1 kg to 50 kg bags**\n• Materials: BOPP, canvas jute, multi-layer PP\n\nContact us to discuss your exact packaging requirements!"
+    },
+    {
+      "id": "payment_terms",
+      "keywords": ["payment", "payment terms", "lc", "letter of credit", "tt", "telegraphic transfer", "wire transfer", "advance payment", "how to pay", "bank", "finance", "incoterms"],
+      "response": "💰 **Payment Terms & Methods**\n\nWe accept the following internationally recognized payment instruments:\n\n**Option 1 — Letter of Credit (L/C):**\n✅ 100% Irrevocable Letter of Credit at Sight\n• Issued by prime international banks\n• Most preferred for large first-time orders\n• Provides maximum security to both parties\n\n**Option 2 — Telegraphic Transfer (T/T):**\n✅ Wire transfer in two tranches:\n• **30% advance** — upon contract/proforma invoice signature\n• **70% balance** — upon presentation of original shipping & customs documents (BL, Phytosanitary, SGS report)\n\n📋 **Incoterms we work with:**\n• **FOB** — Mundra Port (most common)\n• **CFR** — Cost + Freight to destination port\n• **CIF** — Cost + Insurance + Freight\n\n💱 Accepted currencies: USD, EUR, AED\n\nFor a formal proforma invoice, contact: info@rstradixoglobal.com"
+    },
+    {
+      "id": "shipping",
+      "keywords": ["shipping", "transit", "delivery", "freight", "vessel", "container", "how long", "transit time", "port", "mundra", "loading", "dispatch", "logistics"],
+      "response": "🚢 **Shipping & Transit Information**\n\n📍 **Our Loading Port:** Mundra Port, Gujarat (India's largest private container port)\n\n🌍 **Transit Times to Key Markets:**\n| Destination | Transit Time | Shipping Line |\n|-------------|-------------|---------------|\n| 🇦🇪 Dubai (Jebel Ali) | 4–5 Days | Maersk Express Lanes |\n| 🇸🇦 Saudi Arabia / Oman | 5–7 Days | Direct Gulf Lanes |\n| 🇻🇳 Vietnam (Hai Phong) | 12–14 Days | Indo-ASEAN Routes |\n| 🇮🇩 Indonesia (Jakarta) | 10–14 Days | Weekly Connections |\n| 🇸🇬 Malaysia / Singapore | 10–12 Days | ASEAN Trade Lanes |\n\n⚡ **Loading Speed:** Ready to load within **48 hours** of packaging completion\n\n📋 **Documents Provided:**\n• Bill of Lading (BL)\n• Commercial Invoice & Packing List\n• Phytosanitary Certificate\n• SGS / Geo-Chem Inspection Report\n• Certificate of Origin\n• FSSAI Food Safety Certificate"
+    },
+    {
+      "id": "aflatoxin",
+      "keywords": ["aflatoxin", "toxin", "ppb", "eu standard", "food safety peanut", "contamination", "mycotoxin", "quality peanut", "safe peanut"],
+      "response": "🔬 **Aflatoxin Control — Our Quality Standard**\n\nAflatoxin is the **#1 concern** for global peanut imports. Here's how we manage it:\n\n**Our Process:**\n1️⃣ Source only from **registered pest-compliant farmers** in high-quality clay soil regions\n2️⃣ Post-harvest storage in **dry, humidity-monitored warehouse facilities**\n3️⃣ **Random laboratory sampling** before shipment preparation\n4️⃣ **Independent third-party inspection** (SGS / Geo-Chem) at the port\n\n📊 **Our Standards:**\n| Grade | Aflatoxin Level |\n|-------|----------------|\n| Java Peanut (Premium) | 4 PPB Max ✅ (EU compliant) |\n| Bold Peanut (Premium) | 4 PPB Max ✅ |\n| Bold Peanut (Standard) | 10 PPB ✅ |\n\n🌍 **EU Regulation:** Maximum 4 PPB total aflatoxin for groundnuts (Reg. 2023/915)\n\nWe provide **full lab reports** with every shipment for complete transparency!"
+    },
+    {
+      "id": "moisture_quality",
+      "keywords": ["moisture", "humidity", "spoilage", "ocean transit", "voyage", "desiccant", "silica gel", "container moisture", "storage", "freshness"],
+      "response": "💧 **Moisture Control During Ocean Transit**\n\nWe deploy a **multi-stage moisture protection system:**\n\n🔒 **Stage 1 — Pre-Loading Dryness Check:**\n• Peanuts: Loaded only at **<8% moisture**\n• Rice: Loaded only at **<14% moisture**\n• Lab-verified before container sealing\n\n🛡️ **Stage 2 — Container Protection:**\n• Premium **silica gel desiccant absorber pads** placed inside each container\n• **Heavy kraft cargo inner-lining paper** to isolate commodity from container walls\n• Fully isolates goods from oceanic condensation and humidity spikes\n\n📦 **Stage 3 — Packaging Barrier:**\n• Multi-layer PP bags with inner HDPE lining (for rice)\n• Vacuum sealed packs available for specialty peanut orders\n\n✅ **Result:** Zero moisture-related claims across all our shipments\n\nThese protections ensure your cargo arrives in **perfect condition** at any global port!"
+    },
+    {
+      "id": "certifications",
+      "keywords": ["certification", "certificate", "certified", "iec", "fssai", "phytosanitary", "sgs", "geo chem", "bureau veritas", "quality inspection", "compliance", "license", "customs document"],
+      "response": "📋 **Our Certifications & Compliance Documents**\n\n**1️⃣ IEC Code (Import Export Code)**\n• Issued by: DGFT, Ministry of Commerce, Govt. of India\n• Purpose: Mandatory for all customs clearance & international wire transfers\n\n**2️⃣ FSSAI License (Food Safety)**\n• Issued by: Food Safety & Standards Authority of India\n• Purpose: Validates food safety, sanitary & hygiene compliance\n• Accepted by: Europe, UAE, North America, Asia customs portals\n\n**3️⃣ Phytosanitary Certificate (PSC)**\n• Issued by: Plant Quarantine & Inspection, Ministry of Agriculture\n• Purpose: Certifies cargo is free of pests, pathogens, and weed threats\n• Required at destination ports worldwide\n\n**4️⃣ Third-Party Inspection Reports**\n• Inspectors: SGS India, Geo-Chem, Bureau Veritas\n• Covers: Weight, grain dimensions, moisture, aflatoxin levels, container packing\n• Provides financial transparency for buyer & seller\n\n✅ All certificates are provided with every shipment!"
+    },
+    {
+      "id": "export_markets",
+      "keywords": ["markets", "countries", "export to", "where do you export", "destinations", "which countries", "uae", "dubai", "vietnam", "indonesia", "saudi arabia", "malaysia", "singapore", "philippines", "middle east", "gulf", "asia"],
+      "response": "🌍 **Our Global Export Markets**\n\n🇦🇪 **UAE / Gulf Region (Primary Market)**\n• Port: Dubai Jebel Ali Port\n• Products: Basmati Rice, Bold Peanuts, Java Peanuts\n• Transit: 4–5 days (Maersk Express Lanes)\n\n🇸🇦 **Saudi Arabia, Oman & Gulf Network**\n• Products: Aged Basmati Rice, Bold Peanuts\n• For: Luxury culinary markets, hospitality suppliers, Riyadh to Muscat\n\n🇻🇳 **Vietnam (Hai Phong & Ho Chi Minh Ports)**\n• Products: Java Peanuts, Bold Peanuts, Non-Basmati Rice\n• Purpose: Snack processing, confectionery, redistribution\n• Transit: 12–14 days\n\n🇮🇩 **Indonesia (Jakarta, Surabaya)**\n• Products: Non-Basmati Rice, Java & Bold Peanuts\n• Custom packing to fit Indonesian customs guidelines\n\n🇸🇬 **Malaysia, Philippines & Singapore**\n• Products: Non-Basmati Rice, Basmati Rice, Java Peanuts\n• Indo-ASEAN free trade certification support\n\nWe cover **11+ global sourcing lanes** with weekly vessel connections!"
+    },
+    {
+      "id": "uae_market",
+      "keywords": ["uae", "dubai", "abu dhabi", "jebel ali", "emirates", "gulf", "arab"],
+      "response": "🇦🇪 **UAE & Gulf Region — Our Primary Market**\n\nThe UAE (especially Dubai's Jebel Ali Port) is our **#1 export destination** as a mega-hub for re-export and domestic food supply.\n\n📦 **Products We Export to UAE:**\n• Premium Aged Basmati Rice\n• Bold Peanut Kernels\n• Java Peanut Kernels\n\n🚢 **Shipping Advantage:**\n• Only **4–5 days direct transit** from Mundra Port\n• Via Maersk Express Lanes\n• Weekly vessel departures\n\n📋 **Documentation for UAE Customs:**\n• Phytosanitary Certificate (Plant Quarantine approved)\n• FSSAI Food Safety Certificate\n• SGS / Geo-Chem Quality Inspection Report\n• Commercial Invoice + Packing List + BL\n• Certificate of Origin (India)\n\n💰 **Incoterms:** FOB Mundra or CIF Jebel Ali\n\nReady to ship to UAE? Contact: info@rstradixoglobal.com | WhatsApp: +91 98794 98123"
+    },
+    {
+      "id": "vietnam_market",
+      "keywords": ["vietnam", "vietnamese", "hai phong", "ho chi minh", "viet"],
+      "response": "🇻🇳 **Vietnam — South East Asia Key Partner**\n\nVietnam is a massive buyer of Indian peanuts for snack processing and confectionery manufacturing.\n\n📦 **Products Exported to Vietnam:**\n• Java Peanut Kernels (primary demand)\n• Bold Peanut Kernels\n• Non-Basmati Rice\n\n🚢 **Shipping Details:**\n• Ports: Hai Phong Seaport | Ho Chi Minh Port\n• Transit: **12–14 days** from Mundra\n• Frequency: Weekly mother-vessel connections\n• Compliance: **Indo-ASEAN compliant** documentation\n\n📋 **Special Compliance:**\nWe handle all Vietnam SPS (Sanitary & Phytosanitary) requirements and provide ASEAN-format certificates of origin.\n\nFor Vietnam-specific packing & grade requirements, contact us today!"
+    },
+    {
+      "id": "indonesia_market",
+      "keywords": ["indonesia", "indonesian", "jakarta", "surabaya", "tanjung priok"],
+      "response": "🇮🇩 **Indonesia — Industrial Food Importer**\n\nIndonesia is one of the world's largest food-grade non-basmati rice and industrial peanut importers.\n\n📦 **Products Exported to Indonesia:**\n• Non-Basmati Rice (primary demand)\n• Java Peanut Kernels\n• Bold Peanut Kernels\n\n🚢 **Shipping Details:**\n• Ports: Tanjung Priok (Jakarta) | Surabaya Port\n• Transit: **10–14 days** from Mundra\n• Special: Food parboiled-ready configurations available\n\n📋 **Indonesia Compliance:**\n• Custom packing configurations fit Indonesian customs guidelines\n• High-performance customs documentation clearance\n• Phytosanitary endorsement provided prior to departure\n• SNI (Indonesian National Standard) document support available\n\nFor Indonesia bulk tender inquiries, contact: info@rstradixoglobal.com"
+    },
+    {
+      "id": "contact",
+      "keywords": ["contact", "phone", "email", "whatsapp", "address", "reach you", "call", "office", "location", "how to contact", "get in touch"],
+      "response": "📞 **Contact Rs Tradixo Global**\n\n🏢 **Office Address:**\nRs Tradixo Global\nNear Mundra Port Gateway\nAdipur-Gandhidham, Kutch\nGujarat 370205, India\n\n📱 **Phone:** +91 98794 98123\n📧 **Email:** info@rstradixoglobal.com\n💬 **WhatsApp:** +91 98794 98123\n\n⏰ **Office Hours:**\nMonday to Saturday\n09:00 AM – 06:30 PM (IST)\n\n🚢 **Loading Port:** Mundra Port, Gujarat\n\n🌐 **Trade Languages:** English, Hindi, Gujarati, Arabic\n\nFor export quotes, product specifications, or custom packaging inquiries — we typically respond within **24 business hours**!"
+    },
+    {
+      "id": "location",
+      "keywords": ["mundra", "mundra port", "gujarat", "where located", "india location", "port proximity"],
+      "response": "📍 **Our Strategic Location — Mundra Port, Gujarat**\n\nWe are located at **Adipur-Gandhidham, Kutch, Gujarat** — right next to **Mundra Port**, India's **largest private container port**.\n\n🏆 **Why Mundra Port Matters:**\n• Largest private bulk & container port in India\n• State-of-the-art automated berths with high-speed loading\n• Our proximity means:\n  ✅ Reduced inland transit transport costs & risks\n  ✅ Cargo loaded on vessel within **48 hours** of packaging\n  ✅ Minimal cargo handling damage\n  ✅ 0% port delay record\n\n🌍 **Direct Trade Routes from Mundra:**\n• UAE: 4–5 days\n• Gulf Region: 5–7 days  \n• Vietnam: 12–14 days\n• Indonesia: 10–14 days\n• Malaysia/Singapore: 10–12 days\n\nThis location gives our buyers a **competitive advantage** in delivery timelines!"
+    },
+    {
+      "id": "price_quote",
+      "keywords": ["price", "pricing", "cost", "rate", "fob", "cif", "cfr", "quotation", "quote", "how much", "per ton", "per kg", "per mt"],
+      "response": "💰 **Pricing & Quotation Information**\n\nOur prices are dynamic and depend on:\n• Current crop season & market rates\n• Product grade & specifications required\n• Quantity (FCL / LCL)\n• Destination port & Incoterm (FOB / CFR / CIF)\n• Packing configuration\n• Payment terms (L/C or T/T)\n\n📋 **How to Get a Quote:**\n\n1️⃣ **Email us** your requirements to:\n   info@rstradixoglobal.com\n\n2️⃣ **WhatsApp** our trade desk:\n   +91 98794 98123\n\n3️⃣ **Use the Inquiry Form** on our website\n   (Click 'Get FOB Quote' button)\n\n📄 **We'll provide:**\n• Formal Proforma Invoice\n• Indicative FOB Mundra pricing\n• Available grades & packing options\n• Estimated loading timeline\n\n⚡ Response time: Within **24 business hours**\n\nWe offer **competitive FOB Mundra pricing** with complete transparency!"
+    },
+    {
+      "id": "quality_assurance",
+      "keywords": ["quality", "quality control", "inspection", "sgs", "geo chem", "lab test", "how do you ensure quality", "quality assurance", "third party"],
+      "response": "🔬 **Our Quality Assurance Process**\n\nEvery shipment goes through a **6-step quality control chain:**\n\n**Step 1 — Farm Level Sourcing:**\n✅ Only registered, certified farmers from premium agricultural belts (Kutch, Saurashtra, North Gujarat)\n\n**Step 2 — Post-Harvest Processing:**\n✅ Mechanical shelling, de-stoning, sorting\n✅ Color sorting machine (removes discolored grains)\n✅ Size grading (ensures uniform count/size)\n\n**Step 3 — Warehouse Storage:**\n✅ Dry, humidity-controlled storage facilities\n✅ Regular moisture monitoring\n\n**Step 4 — Pre-Shipment Lab Testing:**\n✅ Random laboratory sampling for aflatoxin, moisture, purity\n✅ Internal quality certification\n\n**Step 5 — Independent Third-Party Inspection:**\n✅ SGS India / Geo-Chem / Bureau Veritas inspectors at the port\n✅ Inspection covers: weight, dimensions, moisture, aflatoxin, packing\n\n**Step 6 — Documentation:**\n✅ Full inspection report provided to buyer for complete financial transparency\n\n📋 **Result:** Zero quality dispute record across all shipments!"
+    },
+    {
+      "id": "faq_customs",
+      "keywords": ["customs", "customs document", "custom clearance", "import document", "bill of lading", "bl", "certificate of origin", "co"],
+      "response": "📋 **Customs & Export Documentation**\n\nWe provide a **complete documentation package** with every shipment:\n\n**Standard Export Documents:**\n| Document | Purpose |\n|----------|---------|\n| Bill of Lading (BL) | Sea freight title document |\n| Commercial Invoice | Customs valuation |\n| Packing List | Cargo content declaration |\n| Certificate of Origin | Preferential tariff (ASEAN/Gulf) |\n| Phytosanitary Certificate | Plant health clearance |\n| FSSAI Certificate | Food safety compliance |\n| SGS/Geo-Chem Report | Independent quality verification |\n| IEC Certificate | Verified exporter identity |\n\n**Special Documents Available:**\n• Form A (GSP Certificate) for preferential duty\n• Fumigation Certificate (on request)\n• Halal Certificate (for applicable products)\n• Health Certificate (country-specific)\n\nWe handle all documentation in-house — **no delays, full compliance!**"
+    },
+    {
+      "id": "private_label",
+      "keywords": ["private label", "custom brand", "own label", "white label", "my brand", "buyer brand", "custom packaging", "logo", "print packaging", "brand name on bag"],
+      "response": "🎨 **Custom & Private Label Packaging**\n\nYes! We absolutely support **private label / custom brand packaging** for global retail and wholesale clients.\n\n✅ **What We Can Print/Include:**\n• Your company brand name & logo\n• Localized language text (Arabic, Vietnamese, Bahasa, etc.)\n• Trade weight barcodes & QR codes\n• Import license information\n• Nutritional facts & ingredient list\n• Country-specific regulatory info\n\n📦 **Available Bag Sizes:**\n• 1 kg | 2 kg | 5 kg | 10 kg | 20 kg | 25 kg | 50 kg\n\n🧵 **Bag Materials:**\n• Premium BOPP (Biaxially Oriented Polypropylene)\n• Canvas Jute Bags\n• Multi-layer PP woven bags\n• Vacuum sealed pouches\n\n⚙️ **Minimum Printing Run:**\nContact us for minimum order quantities for custom prints\n\n📞 To discuss your private label requirements:\nWhatsApp: +91 98794 98123\nEmail: info@rstradixoglobal.com"
+    },
+    {
+      "id": "thank_you",
+      "keywords": ["thank you", "thanks", "thank", "appreciated", "great", "awesome", "wonderful", "excellent", "perfect", "ok thanks", "got it"],
+      "response": "😊 You're welcome! It's our pleasure to assist you.\n\n🌟 **Rs Tradixo Global** is always here to support your agricultural import needs.\n\nIf you have any more questions about our products, pricing, or export capabilities, feel free to ask anytime!\n\n📞 **Ready to place an order?**\n• WhatsApp: +91 98794 98123\n• Email: info@rstradixoglobal.com\n• Or use our **'Get FOB Quote'** button\n\nHave a great business day! 🚢🥜🌾"
+    },
+    {
+      "id": "goodbye",
+      "keywords": ["bye", "goodbye", "see you", "later", "ciao", "take care", "have a good day", "good night", "good bye"],
+      "response": "👋 **Goodbye from Rs Tradixo Global!**\n\nThank you for your interest in our agricultural export services.\n\nWe hope to serve your business needs soon. Remember:\n📧 info@rstradixoglobal.com\n📱 +91 98794 98123 (WhatsApp available)\n\nWishing you successful trade deals! 🤝🌍"
+    }
+  ]
+}

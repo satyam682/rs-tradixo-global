@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Sitemap for Rs Tradixo Global
+  Premium Agricultural Exporter specializing in Groundnuts, Peanut Kernels, and Basmati/Non-Basmati Rice.
+  Mundra Port Gateways, Gujarat, India.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Main Multi-lingual Entrypoint (Default English) -->
+  <url>
+    <loc>https://tradixoglobal.com/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Multi-lingual hreflang targets -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradixoglobal.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tradixoglobal.com/?lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://tradixoglobal.com/?lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tradixoglobal.com/?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradixoglobal.com/" />
+  </url>
+
+  <!-- About Us Section (Our Legacy & Mundra Port Logistics Desk) -->
+  <url>
+    <loc>https://tradixoglobal.com/?tab=about</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradixoglobal.com/?tab=about&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tradixoglobal.com/?tab=about&amp;lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://tradixoglobal.com/?tab=about&amp;lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tradixoglobal.com/?tab=about&amp;lang=ar" />
+  </url>
+
+  <!-- Product Catalog (Groundnuts Bold/Java & Premium Grains) -->
+  <url>
+    <loc>https://tradixoglobal.com/?tab=products</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradixoglobal.com/?tab=products&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tradixoglobal.com/?tab=products&amp;lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://tradixoglobal.com/?tab=products&amp;lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tradixoglobal.com/?tab=products&amp;lang=ar" />
+  </url>
+
+  <!-- Export Markets (Dubai, Vietnam, Indonesia & Global Maritime Lanes) -->
+  <url>
+    <loc>https://tradixoglobal.com/?tab=markets</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradixoglobal.com/?tab=markets&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tradixoglobal.com/?tab=markets&amp;lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://tradixoglobal.com/?tab=markets&amp;lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tradixoglobal.com/?tab=markets&amp;lang=ar" />
+  </url>
+
+  <!-- Certifications (FSSAI, SGS, Safe Food Compliance) -->
+  <url>
+    <loc>https://tradixoglobal.com/?tab=certifications</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradixoglobal.com/?tab=certifications&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tradixoglobal.com/?tab=certifications&amp;lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://tradixoglobal.com/?tab=certifications&amp;lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tradixoglobal.com/?tab=certifications&amp;lang=ar" />
+  </url>
+
+  <!-- Contact Sourcing Desk / Get Legal CIF-FOB Port Quote -->
+  <url>
+    <loc>https://tradixoglobal.com/?tab=contact</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradixoglobal.com/?tab=contact&amp;lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tradixoglobal.com/?tab=contact&amp;lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://tradixoglobal.com/?tab=contact&amp;lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tradixoglobal.com/?tab=contact&amp;lang=ar" />
+  </url>
+
+</urlset>
