@@ -252,7 +252,7 @@ export default function Hero({ onExploreProducts, onOpenInquiry }: HeroProps) {
                     RS <span style={{ color: '#C5A25D' }}>TRADIXO</span> GLOBAL
                   </p>
                   <p className="text-[#AA8B4C] text-[8px] sm:text-[10px] md:text-xs lg:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] mt-0.5 sm:mt-1.5 font-semibold">
-                    Connecting Global...
+                    Connecting to the World...
                   </p>
                 </div>
 

@@ -116,13 +116,13 @@ export default function Header({ currentTab, onTabChange, onOpenInquiry }: Heade
             <img
               src="/logo.png"
               alt="RS Tradixo Global Logo"
-              className="h-10 w-10 object-contain rounded-full border border-[#AA8B4C]/20 shadow-sm transition-transform duration-200 group-hover:scale-105 shrink-0"
+              className="h-14 w-14 object-contain rounded-full border border-[#AA8B4C]/20 shadow-sm transition-transform duration-200 group-hover:scale-105 shrink-0"
             />
             <div className="leading-tight text-left">
-              <div className="font-bold text-xs sm:text-sm text-slate-900 tracking-tight transition-colors group-hover:text-[#AA8B4C] whitespace-nowrap">
+              <div className="font-bold text-sm sm:text-base text-slate-900 tracking-tight transition-colors group-hover:text-[#AA8B4C] whitespace-nowrap">
                 RS <span className="text-[#C5A25D]">TRADIXO</span> GLOBAL
               </div>
-              <div className="text-[8px] sm:text-[9px] uppercase tracking-[0.18em] text-slate-400 font-extrabold font-sans">Connecting Global...</div>
+              <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.18em] text-slate-400 font-extrabold font-sans">Connecting to the World...</div>
             </div>
           </div>
 
