@@ -426,7 +426,7 @@ export function ChatbotButton({ onClick, isOpen }: ChatbotButtonProps) {
       id="chatbot-toggle-button"
       onClick={onClick}
       aria-label={isOpen ? 'Close TradixoBot' : 'Open TradixoBot Chat'}
-      className="fixed bottom-6 left-6 z-50 flex items-center gap-2.5 rounded-xl transition-all duration-300 cursor-pointer"
+      className="fixed bottom-24 sm:bottom-6 left-4 sm:left-6 z-50 flex items-center gap-2.5 rounded-xl transition-all duration-300 cursor-pointer"
       style={{
         padding: '10px 18px',
         background: isOpen

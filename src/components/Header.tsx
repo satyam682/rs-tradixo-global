@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Globe, PhoneCall, Anchor, Languages, Check, ArrowUpRight, ShieldCheck } from 'lucide-react';
+import { Menu, X, Globe, PhoneCall, Anchor, Languages, Check, ArrowUpRight, ShieldCheck, MoreVertical, Home, Building2, ShoppingBag, Award, Headphones } from 'lucide-react';
 import { COMP_INFO } from '../data.ts';
 import { useLanguage } from '../context/LanguageContext.tsx';
 
@@ -198,7 +198,7 @@ export default function Header({ currentTab, onTabChange, onOpenInquiry }: Heade
             </button>
           </div>
 
-          {/* Mobile Hamburger trigger - Always visible on non-xl screens */}
+          {/* Mobile 3-dot trigger - Always visible on non-xl screens */}
           <div className="flex items-center gap-2 xl:hidden flex-shrink-0 ml-auto">
             <button
               onClick={onOpenInquiry}
@@ -210,71 +210,95 @@ export default function Header({ currentTab, onTabChange, onOpenInquiry }: Heade
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2.5 bg-slate-100 hover:bg-slate-200 border border-slate-200 rounded-md text-slate-700 cursor-pointer flex-shrink-0 flex items-center justify-center"
               id="mobile_menu_trigger"
-              aria-label="Open navigation menu"
+              aria-label="Open language menu"
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <MoreVertical className="w-5 h-5" />}
             </button>
           </div>
 
         </div>
 
-        {/* Mobile Navigation Panel */}
+        {/* Mobile 3-dot Dropdown Panel (Only languages and basic operations) */}
         {mobileMenuOpen && (
-          <div className="absolute top-full left-0 right-0 bg-white border-t border-slate-150 shadow-lg p-4 flex flex-col gap-1.5 xl:hidden animate-fade-in z-45 max-h-[80vh] overflow-y-auto">
-            <div className="border-b pb-2 mb-2">
-              <p className="text-[10px] uppercase text-slate-400 font-bold tracking-wider px-3 mb-1">Navigation Menu</p>
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => handleNavClick(item.id)}
-                  className={`w-full text-left px-4 py-2.5 text-xs font-semibold uppercase tracking-wider rounded-sm transition-colors cursor-pointer ${
-                    currentTab === item.id 
-                      ? 'bg-[#0056B3]/10 text-[#0056B3] font-bold' 
-                      : 'text-slate-700 hover:bg-slate-50'
-                  }`}
-                >
-                  {item.label}
-                </button>
-              ))}
+          <div className="absolute top-full right-4 mt-1 bg-white border border-slate-200 shadow-xl rounded-xl p-4 flex flex-col gap-4 xl:hidden animate-fade-in z-50 w-64 text-left">
+            <div>
+              <p className="text-[10px] uppercase text-slate-400 font-bold tracking-wider mb-2 flex items-center gap-1.5">
+                <Globe className="w-3.5 h-3.5 text-[#C5A25D]" />
+                {t.trade_languages}
+              </p>
+              <div className="grid grid-cols-2 gap-2">
+                {LANGUAGES.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => {
+                      setCurrentLang(lang.code);
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`p-2 rounded-lg text-xs font-bold border text-left flex items-center gap-1.5 cursor-pointer transition-all ${
+                      currentLang === lang.code 
+                        ? 'border-[#0056B3] bg-blue-50 text-[#0056B3]' 
+                        : 'border-slate-200 text-slate-600 hover:bg-slate-50'
+                    }`}
+                  >
+                    <span className="font-mono text-xs">{lang.flag}</span>
+                    <span>{lang.label.split(' ')[0]}</span>
+                  </button>
+                ))}
+              </div>
             </div>
 
-            <div className="px-3 pt-1 space-y-3">
-              <div>
-                <p className="text-[10px] uppercase text-slate-400 font-bold tracking-wider mb-2">{t.trade_languages}</p>
-                <div className="grid grid-cols-2 gap-2">
-                  {LANGUAGES.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => {
-                        setCurrentLang(lang.code);
-                        setMobileMenuOpen(false);
-                      }}
-                      className={`p-2 rounded-sm text-xs font-medium border text-left flex items-center gap-1.5 cursor-pointer ${currentLang === lang.code ? 'border-[#0056B3] bg-blue-50 text-[#0056B3]' : 'border-slate-200 text-slate-600'}`}
-                    >
-                      <span className="font-mono">{lang.flag}</span>
-                      <span>{lang.label.split(' ')[0]}</span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-
+            <div className="border-t border-slate-100 pt-3 space-y-3">
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
                   onOpenInquiry();
                 }}
-                className="w-full py-3 bg-gradient-to-r from-[#D4AF37] to-[#C5A25D] hover:from-[#E2C578] hover:to-[#C5A25D] text-slate-950 rounded-sm text-xs font-bold uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 shadow-sm cursor-pointer border border-[#AA8B4C]/25"
+                className="w-full py-2.5 bg-gradient-to-r from-[#D4AF37] to-[#C5A25D] hover:from-[#E2C578] hover:to-[#C5A25D] text-slate-950 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm cursor-pointer border border-[#AA8B4C]/25"
               >
-                {t.btn_get_fob_quote} <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
+                {t.btn_get_fob_quote} <ArrowUpRight className="w-3.5 h-3.5 stroke-[2.5]" />
               </button>
               
-              <div className="text-center text-[10px] text-slate-400 pb-2">
-                {t.office_hours} {t.contact_hours_val || '09:00 - 18:30'} ({t.sourcing_desk})
+              <div className="text-center text-[9px] font-semibold text-slate-400">
+                {t.office_hours} {t.contact_hours_val || '09:00 - 18:30'}
+                <br />
+                <span className="text-emerald-500 font-bold">{t.sourcing_desk}</span>
               </div>
             </div>
           </div>
         )}
       </nav>
+
+      {/* Mobile Bottom Navigation Bar (Fixed at the bottom for xl:hidden) */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] xl:hidden flex justify-around items-stretch h-16 pb-safe">
+        {[
+          { id: 'home', label: currentLang === 'hi' ? 'मुख्य' : currentLang === 'gu' ? 'હોમ' : currentLang === 'ar' ? 'الرئيسية' : 'Home', icon: Home },
+          { id: 'about', label: currentLang === 'hi' ? 'कंपनी' : currentLang === 'gu' ? 'કંપની' : currentLang === 'ar' ? 'الشركة' : 'Company', icon: Building2 },
+          { id: 'products', label: currentLang === 'hi' ? 'उत्पाद' : currentLang === 'gu' ? 'પ્રોડક્ટ્સ' : currentLang === 'ar' ? 'المنتجات' : 'Products', icon: ShoppingBag },
+          { id: 'certifications', label: currentLang === 'hi' ? 'प्रमाणपत्र' : currentLang === 'gu' ? 'પ્રમાણપત્ર' : currentLang === 'ar' ? 'الشهادات' : 'Certifications', icon: Award },
+          { id: 'contact', label: currentLang === 'hi' ? 'संपर्क' : currentLang === 'gu' ? 'સંપર્ક' : currentLang === 'ar' ? 'الاتصال' : 'Contact', icon: Headphones },
+        ].map((item) => {
+          const isActive = currentTab === item.id;
+          const IconComponent = item.icon;
+          return (
+            <button
+              key={item.id}
+              onClick={() => handleNavClick(item.id)}
+              className={`flex-1 flex flex-col items-center justify-center relative py-1 cursor-pointer transition-colors ${
+                isActive ? 'text-[#C5A25D]' : 'text-slate-400 hover:text-slate-600'
+              }`}
+            >
+              {/* Top active indicator line */}
+              {isActive && (
+                <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#C5A25D]" />
+              )}
+              <IconComponent className="w-5.5 h-5.5 mb-1" />
+              <span className={`text-[9px] font-extrabold tracking-wider uppercase font-sans mt-0.5 ${isActive ? 'text-[#C5A25D]' : 'text-slate-500'}`}>
+                {item.label}
+              </span>
+            </button>
+          );
+        })}
+      </div>
     </header>
   );
 }

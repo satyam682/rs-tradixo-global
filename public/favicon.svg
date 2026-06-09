@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <circle cx="16" cy="16" r="14" fill="#ffffff" stroke="#C5A25D" stroke-width="2.5" />
+  <text x="16" y="21.5" font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" font-weight="900" font-size="13" text-anchor="middle" letter-spacing="-0.5">
+    <tspan fill="#0F172A">R</tspan><tspan fill="#C5A25D">S</tspan>
+  </text>
+</svg>

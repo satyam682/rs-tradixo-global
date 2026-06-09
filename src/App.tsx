@@ -185,8 +185,8 @@ export default function App() {
         onOpenInquiry={handleOpenGeneralInquiry} 
       />
 
-      {/* Main Container block offset for header height */}
-      <main className="flex-grow pt-[124px] sm:pt-[100px]">
+      {/* Main Container block offset for header height, plus mobile bottom nav padding */}
+      <main className="flex-grow pt-[124px] sm:pt-[100px] xl:pb-0 pb-16">
         {renderTabContent()}
       </main>
 
