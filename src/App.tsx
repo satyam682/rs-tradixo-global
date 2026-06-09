@@ -214,7 +214,7 @@ export default function App() {
       {/* Floating instant WhatsApp link widget with custom badge */}
       <div className="fixed bottom-6 right-6 z-30 group hidden sm:block">
         <a 
-          href={`https://wa.me/${COMP_INFO.whatsapp}?text=Hello%20Rs%20Tradixo%20Global%20exporter%20team,%20I%20am%20interested%20in%20agricultural%20products%20quotation.`} 
+          href={`https://wa.me/${COMP_INFO.whatsapp}?text=${encodeURIComponent("Hello Rs Tradixo Global exporter team, I am interested in agricultural products quotation.")}`} 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-600 text-white shadow-[#0056B3]/25 shadow-lg hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105"

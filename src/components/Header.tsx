@@ -122,7 +122,7 @@ export default function Header({ currentTab, onTabChange, onOpenInquiry }: Heade
               <div className="font-bold text-xs sm:text-sm text-slate-900 tracking-tight transition-colors group-hover:text-[#AA8B4C] whitespace-nowrap">
                 RS <span className="text-[#C5A25D]">TRADIXO</span> GLOBAL
               </div>
-              <div className="text-[8px] sm:text-[9px] uppercase tracking-[0.18em] text-slate-400 font-extrabold font-sans">Connecting India...</div>
+              <div className="text-[8px] sm:text-[9px] uppercase tracking-[0.18em] text-slate-400 font-extrabold font-sans">Connecting Global...</div>
             </div>
           </div>
 

@@ -258,7 +258,7 @@ export default function Footer({ onTabChange, onOpenInquiry }: FooterProps) {
               </li>
               <li className="pt-2 text-left">
                 <a 
-                  href={`https://wa.me/${COMP_INFO.whatsapp}?text=Hello%20Rs%20Tradixo%20Global%20exporter%20team,%20I%20am%2520interested%20in%20agricultural%20products%20quotation.`} 
+                  href={`https://wa.me/${COMP_INFO.whatsapp}?text=${encodeURIComponent("Hello Rs Tradixo Global exporter team, I am interested in agricultural products quotation.")}`} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-3.5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-sm text-xs font-bold uppercase tracking-wider transition-colors shadow-md"
