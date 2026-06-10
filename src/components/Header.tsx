@@ -110,20 +110,14 @@ export default function Header({ currentTab, onTabChange, onOpenInquiry }: Heade
           {/* Logo Brand — actual company logo image */}
           <div 
             onClick={() => handleNavClick('home')} 
-            className="flex items-center gap-2.5 cursor-pointer group shrink-0"
+            className="flex items-center cursor-pointer group shrink-0"
             id="brand_logo_header"
           >
             <img
               src="/logo.png"
               alt="RS Tradixo Global Logo"
-              className="h-14 w-14 object-contain rounded-full border border-[#AA8B4C]/20 shadow-sm transition-transform duration-200 group-hover:scale-105 shrink-0"
+              className="h-8 xs:h-9 sm:h-10 md:h-12 lg:h-14 w-auto object-contain transition-transform duration-200 group-hover:scale-105 shrink-0"
             />
-            <div className="leading-tight text-left">
-              <div className="font-bold text-sm sm:text-base text-slate-900 tracking-tight transition-colors group-hover:text-[#AA8B4C] whitespace-nowrap">
-                RS <span className="text-[#C5A25D]">TRADIXO</span> GLOBAL
-              </div>
-              <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.18em] text-slate-400 font-extrabold font-sans">Connecting to the World...</div>
-            </div>
           </div>
 
           {/* Desktop Navigation Links — tightened spacing so CTA never gets clipped */}

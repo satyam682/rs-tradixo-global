@@ -242,19 +242,9 @@ export default function Hero({ onExploreProducts, onOpenInquiry }: HeroProps) {
                 <img
                   src="/logo.png"
                   alt="RS Tradixo Global"
-                  className="w-28 h-28 sm:w-44 sm:h-44 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 object-contain drop-shadow-md relative z-10 animate-fade-in"
+                  className="w-64 sm:w-80 md:w-[420px] lg:w-[480px] h-auto object-contain drop-shadow-md relative z-10 animate-fade-in"
                   style={{ filter: 'drop-shadow(0 0 24px rgba(197,162,93,0.15))' }}
                 />
-
-                {/* Company name text */}
-                <div className="mt-2 sm:mt-3 text-center relative z-10 px-2">
-                  <p className="font-extrabold text-slate-900 text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl tracking-widest" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                    RS <span style={{ color: '#C5A25D' }}>TRADIXO</span> GLOBAL
-                  </p>
-                  <p className="text-[#AA8B4C] text-[8px] sm:text-[10px] md:text-xs lg:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] mt-0.5 sm:mt-1.5 font-semibold">
-                    Connecting to the World...
-                  </p>
-                </div>
 
                 {/* Loading dots — only on intro */}
                 {phase === 'logo-intro' && (
