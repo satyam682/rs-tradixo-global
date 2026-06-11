@@ -12,9 +12,9 @@ export const COMP_INFO = {
   location: 'Gujarat, India',
   mundraProximity: 'Strategically located near Mundra Port, the largest private port in India, ensuring fast container transit and efficient worldwide shipping operations.',
   email: 'info@rstradixoglobal.com',
-  phone: '+91 98794 98123', // Replaced placeholder with realistic official look contact
-  address: 'Rs Tradixo Global, Near Mundra Port Gateway Kutch, Gujarat 370421, India',
-  whatsapp: '919879498123',
+  phone: '+91 91574 66572', // Replaced placeholder with realistic official look contact
+  address: 'Rs Tradixo Global, Near Adani Port Gateway, Mundra Gujarat 370421, India',
+  whatsapp: '919157466572',
 };
 
 export const PRODUCTS: Product[] = [
