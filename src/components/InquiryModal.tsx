@@ -124,7 +124,7 @@ export default function InquiryModal({ isOpen, onClose, selectedProduct, allProd
     const refNum = `TRAD-${Math.floor(100000 + Math.random() * 900000)}`;
 
     const templateParams = {
-      to_email: 'satyamkadavla19@gmail.com',
+      to_email: 'info@rstradixoglobal.com',
       from_name: formData.fullName,
       from_email: formData.email,
       phone: formData.phone,

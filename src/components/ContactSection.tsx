@@ -135,7 +135,7 @@ export default function ContactSection({ onOpenInquiry, showOnlyFaq = false }: C
     const publicKey = cleanEnvVar((import.meta as any).env.VITE_EMAILJS_PUBLIC_KEY) || '0WbG-TDBYq_KXasPk';
 
     const templateParams = {
-      to_email: 'satyamkadavla19@gmail.com',
+      to_email: 'info@rstradixoglobal.com',
       from_name: name,
       from_email: email,
       subject: subject,
