@@ -36,8 +36,12 @@ export default function InquiryModal({ isOpen, onClose, selectedProduct, allProd
   const [errors, setErrors] = useState<Partial<Record<keyof InquiryFormData, string>>>({});
   const [referenceNumber, setReferenceNumber] = useState('');
 
-  // Reset form and sync product when modal opens
-  useEffect(() => {
+  const [prevIsOpen, setPrevIsOpen] = useState(isOpen);
+  const [prevSelectedProductId, setPrevSelectedProductId] = useState(selectedProduct?.id);
+
+  if (isOpen !== prevIsOpen || selectedProduct?.id !== prevSelectedProductId) {
+    setPrevIsOpen(isOpen);
+    setPrevSelectedProductId(selectedProduct?.id);
     if (isOpen) {
       setFormData({
         fullName: '',
@@ -55,7 +59,7 @@ export default function InquiryModal({ isOpen, onClose, selectedProduct, allProd
       setErrors({});
       setReferenceNumber('');
     }
-  }, [isOpen, selectedProduct, allProducts]);
+  }
 
   if (!isOpen) return null;
 

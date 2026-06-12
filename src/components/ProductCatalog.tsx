@@ -103,16 +103,22 @@ export default function ProductCatalog({ onSelectProduct, selectedCategoryId = '
   const [openSection, setOpenSection] = useState<string | null>(null); // for mobile accordion
   const { language, t } = useLanguage();
 
+  const [prevSelectedCategoryId, setPrevSelectedCategoryId] = useState(selectedCategoryId);
+
+  // Sync prop changes to state
+  if (selectedCategoryId !== prevSelectedCategoryId) {
+    setPrevSelectedCategoryId(selectedCategoryId);
+    setFilterCategory(selectedCategoryId as any);
+  }
+
   const filteredProducts = PRODUCTS.filter((p) =>
     filterCategory === 'all' ? true : p.category === filterCategory
   );
 
-  // Sync activeProductTab when filterCategory changes
-  React.useEffect(() => {
-    if (filteredProducts.length > 0 && !filteredProducts.some(p => p.id === activeProductTab)) {
-      setActiveProductTab(filteredProducts[0].id);
-    }
-  }, [filterCategory, filteredProducts, activeProductTab]);
+  // Sync activeProductTab when filterCategory changes inline during render
+  if (filteredProducts.length > 0 && !filteredProducts.some(p => p.id === activeProductTab)) {
+    setActiveProductTab(filteredProducts[0].id);
+  }
 
   const selectedProductObj = filteredProducts.find(p => p.id === activeProductTab) || filteredProducts[0] || PRODUCTS[0];
 

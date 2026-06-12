@@ -26,23 +26,32 @@ export default function TypewriterReveal({
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
 
+  const phrasesRef = React.useRef(phrases);
+  phrasesRef.current = phrases;
+  const typingSpeedRef = React.useRef(typingSpeed);
+  typingSpeedRef.current = typingSpeed;
+  const deletingSpeedRef = React.useRef(deletingSpeed);
+  deletingSpeedRef.current = deletingSpeed;
+  const delayBetweenRef = React.useRef(delayBetween);
+  delayBetweenRef.current = delayBetween;
 
   useEffect(() => {
-    if (phrases.length === 0) return;
+    const currentPhrases = phrasesRef.current;
+    if (currentPhrases.length === 0) return;
 
     let timer: ReturnType<typeof setTimeout>;
-    const phrase = phrases[currentPhraseIdx];
+    const phrase = currentPhrases[currentPhraseIdx];
 
     if (isDeleting) {
       // Deleting character one by one
       timer = setTimeout(() => {
         setCurrentText(prev => prev.slice(0, -1));
-      }, deletingSpeed);
+      }, deletingSpeedRef.current);
     } else {
       // Typing character one by one
       timer = setTimeout(() => {
         setCurrentText(phrase.slice(0, currentText.length + 1));
-      }, typingSpeed);
+      }, typingSpeedRef.current);
     }
 
     // Finished typing the entire phrase
@@ -50,18 +59,18 @@ export default function TypewriterReveal({
       clearTimeout(timer);
       timer = setTimeout(() => {
         setIsDeleting(true);
-      }, delayBetween);
+      }, delayBetweenRef.current);
     }
 
     // Finished deleting the entire phrase
     if (isDeleting && currentText === '') {
       clearTimeout(timer);
       setIsDeleting(false);
-      setCurrentPhraseIdx((prev) => (prev + 1) % phrases.length);
+      setCurrentPhraseIdx((prev) => (prev + 1) % currentPhrases.length);
     }
 
     return () => clearTimeout(timer);
-  }, [currentText, isDeleting, currentPhraseIdx, phrases, typingSpeed, deletingSpeed, delayBetween]);
+  }, [currentText, isDeleting, currentPhraseIdx]);
 
   return (
     <span className={`inline-flex items-center ${className}`}>
