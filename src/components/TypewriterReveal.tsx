@@ -7,6 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 
 interface TypewriterRevealProps {
+  key?: string;
   phrases: string[];
   className?: string;
   typingSpeed?: number;
@@ -25,12 +26,6 @@ export default function TypewriterReveal({
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
 
-  // Reset typewriter when phrases list changes (e.g. on language change)
-  useEffect(() => {
-    setCurrentPhraseIdx(0);
-    setCurrentText('');
-    setIsDeleting(false);
-  }, [phrases]);
 
   useEffect(() => {
     if (phrases.length === 0) return;

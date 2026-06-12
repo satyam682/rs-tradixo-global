@@ -166,7 +166,9 @@ interface ChatbotProps {
 }
 
 export default function Chatbot({ isOpen, onClose }: ChatbotProps) {
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<Message[]>(() => [
+    { id: genId(), role: 'bot', text: GREETING, timestamp: new Date() }
+  ]);
   const [inputText, setInputText]   = useState('');
   const [isTyping, setIsTyping]     = useState(false);
   const [showChips, setShowChips]   = useState(true);
@@ -174,9 +176,13 @@ export default function Chatbot({ isOpen, onClose }: ChatbotProps) {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    if (isOpen && messages.length === 0)
-      setMessages([{ id: genId(), role: 'bot', text: GREETING, timestamp: new Date() }]);
-    if (isOpen) setTimeout(() => inputRef.current?.focus(), 350);
+    let timerId: ReturnType<typeof setTimeout>;
+    if (isOpen) {
+      timerId = setTimeout(() => inputRef.current?.focus(), 350);
+    }
+    return () => {
+      if (timerId) clearTimeout(timerId);
+    };
   }, [isOpen]);
 
   useEffect(() => {

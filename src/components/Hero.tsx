@@ -118,6 +118,7 @@ export default function Hero({ onExploreProducts, onOpenInquiry }: HeroProps) {
           >
             
             <TypewriterReveal 
+              key={language}
               phrases={getTaglinePhrases()}
               className="text-[#AA8B4C] font-extrabold tracking-widest text-xs uppercase mb-2 block min-h-5"
             />
