@@ -8,4 +8,4 @@ Allow: /
 Crawl-delay: 10
 
 # Sitemap registration
-Sitemap: https://tradixoglobal.com/sitemap.xml
+Sitemap: https://rstradixoglobal.com/sitemap.xml
