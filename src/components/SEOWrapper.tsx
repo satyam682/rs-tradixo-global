@@ -17,23 +17,23 @@ export default function SEOWrapper({ currentTab }: SEOWrapperProps) {
     // 1. Professional Multi-lingual Copywriting for the Title & Description metadata
     let title = "Rs Tradixo Global | Premium Agricultural Exporter from India";
     let desc = "Rs Tradixo Global is one of India's leading agricultural exporters specializing in premium groundnuts (Bold & Java grades) and long-grain Basmati & Non-Basmati rice. Directly servicing Dubai, Vietnam, Indonesia and global markets via Mundra Port gateway with certified cargo compliance.";
-    let keywords = "groundnuts exporter India, bold peanuts, java peanut kernels, bulk Basmati rice exporter, non-basmati rice supplier, Mundra port agricultural exports, Indian agricultural trader, Rs Tradixo Global, agricultural trade, grain wholesalers, bulk crop shipments";
+    let keywords = "groundnuts exporter India, bold peanuts, java peanut kernels, bulk Basmati rice exporter, non-basmati rice supplier, Mundra port agricultural exports, Indian agricultural trader, Rs Tradixo Global, agricultural trade, grain wholesalers, bulk crop shipments, Gujarat import export, Gujarat agricultural exports, Mundra port export company";
     let ogLocale = "en_US";
 
     if (language === 'hi') {
       title = "आरएस ट्रेडीक्सो ग्लोबल | भारत से प्रीमियम कृषि निर्यातक | मूंगफली और चावल";
       desc = "आरएस ट्रेडीक्सो ग्लोबल प्रीमियम मूंगफली (बोल्ड और जावा) और उच्च गुणवत्ता वाले बासमती तथा गैर-बासमती चावल के वैश्विक निर्यात में भारत की अग्रणी कंपनी है। मुंद्रा पोर्ट से प्रत्यक्ष शिपिंग और प्रमाणित खाद्य सुरक्षा (FSSAI, SGS)।";
-      keywords = "मूंगफली निर्यातक भारत, चावल निर्यातक, बासमती चावल, जावा मूंगफली, मुंद्रा पोर्ट कृषि निर्यात, आरएस ट्रेडीक्सो ग्लोबल, कृषि व्यापार, थोक खाद्यान्न आपूर्ति";
+      keywords = "मूंगफली निर्यातक भारत, चावल निर्यातक, बासमती चावल, जावा मूंगफली, मुंद्रा पोर्ट कृषि निर्यात, आरएस ट्रेडीक्सो ग्लोबल, कृषि व्यापार, थोक खाद्यान्न आपूर्ति, गुजरात आयात निर्यात, गुजरात कृषि उत्पाद निर्यात, मुंद्रा पोर्ट एक्सपोर्ट";
       ogLocale = "hi_IN";
     } else if (language === 'gu') {
       title = "આરએસ ટ્રેડીક્સો ગ્લોબલ | પ્રીમિયમ કૃષિ નિકાસકાર ભારત | મગફળી અને ચોખા";
       desc = "આરએસ ટ્રેડીક્સો ગ્લોબલ ભારતથી પ્રીમિયમ મગફળી (બોલ્ડ અને જાવા) અને ઉચ્ચ ગુણવત્તાવાળા ચોખા (બાસમતી અને નોન-બાસમતી) ની નિકાસ કરતી અગ્રણી સંસ્થા છે. મુન્દ્રા પોર્ટથી સીધું કન્ટેનર શિપિંગ અને પ્રમાણિત સુરક્ષા.";
-      keywords = "મગફળી નિકાસકાર, ચોખા નિકાસ, મુન્દ્રા પોર્ટ કૃષિ નિકાસ, બાસમતી ચોખા, આરએસ ટ્રેડીક્સો ગ્લોબલ, કૃષિ વ્યાપાર, હોલસેલ અનાજ સપ્લાય";
+      keywords = "મગફળી નિકાસકાર, ચોખા નિકાસ, મુન્દ્રા પોર્ટ કૃષિ નિકાસ, બાસમતી ચોખા, આરએસ ટ્રેડીક્સો ગ્લોબલ, કૃષિ વ્યાપાર, હોલસેલ અનાજ સપ્લાય, ગુજરાત આયાત નિકાસ, ગુજરાત કૃષિ નિકાસ, મુન્દ્રા પોર્ટ એક્સપોર્ટ";
       ogLocale = "gu_IN";
     } else if (language === 'ar') {
       title = "آر إس تريديكسو غلوبال | مصدر زراعي ممتاز من الهند | الفول السوداني والأرز";
       desc = "تعد آر إس تريديكسو غلوبال الشركة الرائدة في الهند لنشاط تصدير الفول السوداني الممتاز والمحاصيل الزراعية والأرز البسمتي العالي الجودة مباشرة من ميناء موندرا، مع شروط شحن مرنة (CIF, FOB) وضمان رقابي معتمد.";
-      keywords = "مصدر الفول السوداني الهند, تصدير الأرز البسمتي, ميناء موندرا لوجستيات, شحن الفول السوداني دبي, آر إس تريديكسو, شركة تصدير زراعية, أرز سيلا هندي";
+      keywords = "مصدر الفول السوداني الهند, تصدير الأرز البسمتي, ميناء موندرا لوجستيات, شحن الفول السوداني دبي, آر إس تريديكسو, شركة تصدير زراعية, أرز سيلا هندي, تصدير استيراد غوجارات, لوجستيات ميناء موندرا الهند";
       ogLocale = "ar_AE";
     }
 
