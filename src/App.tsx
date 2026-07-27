@@ -21,11 +21,66 @@ import { PRODUCTS, COMP_INFO } from './data.ts';
 import { Scale, ShieldCheck, Ship, MessageSquare } from 'lucide-react';
 import Chatbot, { ChatbotButton } from './components/Chatbot.tsx';
 
+const PATH_TO_TAB: Record<string, string> = {
+  '/': 'home',
+  '/home': 'home',
+  '/about': 'about',
+  '/products': 'products',
+  '/markets': 'markets',
+  '/certifications': 'certifications',
+  '/faq': 'faq',
+  '/contact': 'contact',
+};
+
+const TAB_TO_PATH: Record<string, string> = {
+  home: '/',
+  about: '/about',
+  products: '/products',
+  markets: '/markets',
+  certifications: '/certifications',
+  faq: '/faq',
+  contact: '/contact',
+};
+
+const getInitialTab = (): string => {
+  if (typeof window === 'undefined') return 'home';
+  const path = window.location.pathname.toLowerCase().replace(/\/$/, '') || '/';
+  if (PATH_TO_TAB[path]) return PATH_TO_TAB[path];
+  
+  // Fallback to query param ?tab=...
+  const urlParams = new URLSearchParams(window.location.search);
+  const tabParam = urlParams.get('tab');
+  if (tabParam && TAB_TO_PATH[tabParam]) return tabParam;
+  
+  return 'home';
+};
+
 export default function App() {
-  const [currentTab, setCurrentTab] = useState<string>('home');
+  const [currentTab, setCurrentTab] = useState<string>(getInitialTab);
   const [inquiryModalOpen, setInquiryModalOpen] = useState<boolean>(false);
   const [chatbotOpen, setChatbotOpen] = useState<boolean>(false);
   const [preselectedProduct, setPreselectedProduct] = useState<Product | null>(null);
+
+  // Sync state with browser back/forward button navigation
+  useEffect(() => {
+    const handlePopState = () => {
+      const path = window.location.pathname.toLowerCase().replace(/\/$/, '') || '/';
+      if (PATH_TO_TAB[path]) {
+        setCurrentTab(PATH_TO_TAB[path]);
+      } else {
+        const urlParams = new URLSearchParams(window.location.search);
+        const tabParam = urlParams.get('tab');
+        if (tabParam && TAB_TO_PATH[tabParam]) {
+          setCurrentTab(tabParam);
+        } else {
+          setCurrentTab('home');
+        }
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   const handleOpenInquiryWithProduct = (product: Product) => {
     setPreselectedProduct(product);
@@ -37,11 +92,16 @@ export default function App() {
     setInquiryModalOpen(true);
   };
 
-  // Switch tabs and scroll gently to top
+  // Switch tabs, update clean URL history, and scroll gently to top
   const handleTabChange = (tabId: string) => {
+    const targetPath = TAB_TO_PATH[tabId] || '/';
+    if (window.location.pathname !== targetPath) {
+      window.history.pushState({ tab: tabId }, '', targetPath);
+    }
     setCurrentTab(tabId);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
 
   // Render the active main tab view
   const renderTabContent = () => {

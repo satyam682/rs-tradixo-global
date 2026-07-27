@@ -1,11 +1,9 @@
 # robots.txt for Rs Tradixo Global
 # Certified Premium Agricultural Exporter from India (Gujarat, Mundra)
 
-User-Agent: *
+User-agent: *
 Allow: /
 
-# Crawl-delay rules for aggressive scrapers to protect server resources
-Crawl-delay: 10
-
 # Sitemap registration
-Sitemap: https://rstradixoglobal.com/sitemap.xml
+Sitemap: https://www.rstradixoglobal.com/sitemap.xml
+

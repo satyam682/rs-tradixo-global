@@ -9,77 +9,90 @@
 
   <!-- Main Multi-lingual Entrypoint (Default English) -->
   <url>
-    <loc>https://rstradixoglobal.com/</loc>
-    <lastmod>2026-06-04</lastmod>
+    <loc>https://www.rstradixoglobal.com/</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     
     <!-- Multi-lingual hreflang targets -->
-    <xhtml:link rel="alternate" hreflang="en" href="https://rstradixoglobal.com/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://rstradixoglobal.com/?lang=hi" />
-    <xhtml:link rel="alternate" hreflang="gu" href="https://rstradixoglobal.com/?lang=gu" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rstradixoglobal.com/?lang=ar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rstradixoglobal.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rstradixoglobal.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.rstradixoglobal.com/?lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://www.rstradixoglobal.com/?lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rstradixoglobal.com/?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rstradixoglobal.com/" />
   </url>
 
   <!-- About Us Section (Our Legacy & Mundra Port Logistics Desk) -->
   <url>
-    <loc>https://rstradixoglobal.com/?tab=about</loc>
-    <lastmod>2026-06-04</lastmod>
+    <loc>https://www.rstradixoglobal.com/about</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rstradixoglobal.com/?tab=about&amp;lang=en" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://rstradixoglobal.com/?tab=about&amp;lang=hi" />
-    <xhtml:link rel="alternate" hreflang="gu" href="https://rstradixoglobal.com/?tab=about&amp;lang=gu" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rstradixoglobal.com/?tab=about&amp;lang=ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rstradixoglobal.com/about?lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.rstradixoglobal.com/about?lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://www.rstradixoglobal.com/about?lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rstradixoglobal.com/about?lang=ar" />
   </url>
 
   <!-- Product Catalog (Groundnuts Bold/Java & Premium Grains) -->
   <url>
-    <loc>https://rstradixoglobal.com/?tab=products</loc>
-    <lastmod>2026-06-04</lastmod>
+    <loc>https://www.rstradixoglobal.com/products</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rstradixoglobal.com/?tab=products&amp;lang=en" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://rstradixoglobal.com/?tab=products&amp;lang=hi" />
-    <xhtml:link rel="alternate" hreflang="gu" href="https://rstradixoglobal.com/?tab=products&amp;lang=gu" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rstradixoglobal.com/?tab=products&amp;lang=ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rstradixoglobal.com/products?lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.rstradixoglobal.com/products?lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://www.rstradixoglobal.com/products?lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rstradixoglobal.com/products?lang=ar" />
   </url>
 
   <!-- Export Markets (Dubai, Vietnam, Indonesia & Global Maritime Lanes) -->
   <url>
-    <loc>https://rstradixoglobal.com/?tab=markets</loc>
-    <lastmod>2026-06-04</lastmod>
+    <loc>https://www.rstradixoglobal.com/markets</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rstradixoglobal.com/?tab=markets&amp;lang=en" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://rstradixoglobal.com/?tab=markets&amp;lang=hi" />
-    <xhtml:link rel="alternate" hreflang="gu" href="https://rstradixoglobal.com/?tab=markets&amp;lang=gu" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rstradixoglobal.com/?tab=markets&amp;lang=ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rstradixoglobal.com/markets?lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.rstradixoglobal.com/markets?lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://www.rstradixoglobal.com/markets?lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rstradixoglobal.com/markets?lang=ar" />
   </url>
 
   <!-- Certifications (FSSAI, SGS, Safe Food Compliance) -->
   <url>
-    <loc>https://rstradixoglobal.com/?tab=certifications</loc>
-    <lastmod>2026-06-04</lastmod>
+    <loc>https://www.rstradixoglobal.com/certifications</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rstradixoglobal.com/?tab=certifications&amp;lang=en" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://rstradixoglobal.com/?tab=certifications&amp;lang=hi" />
-    <xhtml:link rel="alternate" hreflang="gu" href="https://rstradixoglobal.com/?tab=certifications&amp;lang=gu" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rstradixoglobal.com/?tab=certifications&amp;lang=ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rstradixoglobal.com/certifications?lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.rstradixoglobal.com/certifications?lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://www.rstradixoglobal.com/certifications?lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rstradixoglobal.com/certifications?lang=ar" />
+  </url>
+
+  <!-- FAQ Section -->
+  <url>
+    <loc>https://www.rstradixoglobal.com/faq</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rstradixoglobal.com/faq?lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.rstradixoglobal.com/faq?lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://www.rstradixoglobal.com/faq?lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rstradixoglobal.com/faq?lang=ar" />
   </url>
 
   <!-- Contact Sourcing Desk / Get Legal CIF-FOB Port Quote -->
   <url>
-    <loc>https://rstradixoglobal.com/?tab=contact</loc>
-    <lastmod>2026-06-04</lastmod>
+    <loc>https://www.rstradixoglobal.com/contact</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rstradixoglobal.com/?tab=contact&amp;lang=en" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://rstradixoglobal.com/?tab=contact&amp;lang=hi" />
-    <xhtml:link rel="alternate" hreflang="gu" href="https://rstradixoglobal.com/?tab=contact&amp;lang=gu" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://rstradixoglobal.com/?tab=contact&amp;lang=ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rstradixoglobal.com/contact?lang=en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.rstradixoglobal.com/contact?lang=hi" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://www.rstradixoglobal.com/contact?lang=gu" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rstradixoglobal.com/contact?lang=ar" />
   </url>
 
 </urlset>
+

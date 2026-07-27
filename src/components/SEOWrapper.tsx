@@ -10,11 +10,33 @@ interface SEOWrapperProps {
   currentTab: string;
 }
 
+const ROUTE_PATHS: Record<string, string> = {
+  home: '/',
+  about: '/about',
+  products: '/products',
+  markets: '/markets',
+  certifications: '/certifications',
+  faq: '/faq',
+  contact: '/contact',
+};
+
+const TAB_LABELS: Record<string, string> = {
+  about: 'About Us',
+  products: 'Agri Products',
+  markets: 'Export Markets',
+  certifications: 'Certifications',
+  faq: 'FAQ',
+  contact: 'Contact Desk',
+};
+
 export default function SEOWrapper({ currentTab }: SEOWrapperProps) {
   const { language } = useLanguage();
 
   useEffect(() => {
-    // 1. Professional Multi-lingual Copywriting for the Title & Description metadata
+    const routePath = ROUTE_PATHS[currentTab] || '/';
+    const canonicalUrl = `https://www.rstradixoglobal.com${routePath === '/' ? '/' : routePath}`;
+
+    // 1. Professional Multi-lingual Copywriting for Title & Description
     let title = "Rs Tradixo Global | Premium Agricultural Exporter from India";
     let desc = "Rs Tradixo Global is one of India's leading agricultural exporters specializing in premium groundnuts (Bold & Java grades) and long-grain Basmati & Non-Basmati rice. Directly servicing Dubai, Vietnam, Indonesia and global markets via Mundra Port gateway with certified cargo compliance.";
     let keywords = "groundnuts exporter India, bold peanuts, java peanut kernels, bulk Basmati rice exporter, non-basmati rice supplier, Mundra port agricultural exports, Indian agricultural trader, Rs Tradixo Global, agricultural trade, grain wholesalers, bulk crop shipments, Gujarat import export, Gujarat agricultural exports, Mundra port export company";
@@ -37,7 +59,7 @@ export default function SEOWrapper({ currentTab }: SEOWrapperProps) {
       ogLocale = "ar_AE";
     }
 
-    // 2. Tab-specific title contextual enrichment (for high-level semantic search crawls)
+    // 2. Tab-specific title contextual enrichment
     if (currentTab === 'about') {
       if (language === 'hi') title = "हमारे बारे में | " + title;
       else if (language === 'gu') title = "અમારા વિશે | " + title;
@@ -65,7 +87,6 @@ export default function SEOWrapper({ currentTab }: SEOWrapperProps) {
       else title = "Get Import Quotation & Contact Ports Desk | " + title;
     }
 
-    // Apply main title update safely
     document.title = title;
 
     // Helper to dynamically set or create meta elements
@@ -83,11 +104,12 @@ export default function SEOWrapper({ currentTab }: SEOWrapperProps) {
     setMetaTag('name', 'description', desc);
     setMetaTag('name', 'keywords', keywords);
     
-    // Update Open Graph (Social Sharing previews: Facebook, LinkedIn, WhastApp, etc.)
+    // Update Open Graph tags
     setMetaTag('property', 'og:title', title);
     setMetaTag('property', 'og:description', desc);
     setMetaTag('property', 'og:locale', ogLocale);
     setMetaTag('property', 'og:type', 'website');
+    setMetaTag('property', 'og:url', canonicalUrl);
     setMetaTag('property', 'og:site_name', 'Rs Tradixo Global');
     
     // Twitter Card Tags
@@ -95,12 +117,59 @@ export default function SEOWrapper({ currentTab }: SEOWrapperProps) {
     setMetaTag('name', 'twitter:title', title);
     setMetaTag('name', 'twitter:description', desc);
 
-    // Update root HTML element lang attribute to stay in sync
+    // Dynamic Canonical Link update
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.setAttribute('href', canonicalUrl);
+
+    // Sync HTML lang
     const htmlElement = document.querySelector('html');
     if (htmlElement) {
       htmlElement.setAttribute('lang', language);
     }
+
+    // Dynamic Route BreadcrumbList & Page Specific JSON-LD injection
+    const scriptId = 'dynamic-route-schema';
+    let dynamicScript = document.getElementById(scriptId) as HTMLScriptElement | null;
+    if (!dynamicScript) {
+      dynamicScript = document.createElement('script');
+      dynamicScript.id = scriptId;
+      dynamicScript.type = 'application/ld+json';
+      document.head.appendChild(dynamicScript);
+    }
+
+    const breadcrumbs = [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.rstradixoglobal.com/"
+      }
+    ];
+
+    if (currentTab !== 'home' && TAB_LABELS[currentTab]) {
+      breadcrumbs.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": TAB_LABELS[currentTab],
+        "item": canonicalUrl
+      });
+    }
+
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": breadcrumbs
+    };
+
+    dynamicScript.text = JSON.stringify(breadcrumbSchema);
+
   }, [language, currentTab]);
 
-  return null; // This component registers effects and doesn't paint anything to DOM
+  return null;
 }
+
